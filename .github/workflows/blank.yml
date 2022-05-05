@@ -79,7 +79,7 @@ jobs:
     - name: windows build & install
       run: |
 
-        cd $GITHUB_WORKSPACE
+        cd $GITHUB_WORKSPACE/LegionCore_Reforge
         
         mkdir -p build && cd build
         cmake .. -DTOOLS=ON -A x64
