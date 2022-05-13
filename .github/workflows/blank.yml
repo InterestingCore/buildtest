@@ -89,6 +89,7 @@ jobs:
       shell: bash
     - name: Create Upload File Name
       run: |
+          cd ${{github.workspace}}/LegionCore_Reforge/
           echo "ARCHIVE_FILENAME=${{ github.event.repository.name }}-$(git rev-parse --short HEAD).zip" >> $env:GITHUB_ENV
     - name: Archive files
       run: |
