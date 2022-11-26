@@ -28,7 +28,7 @@ jobs:
     #git checkout
     - name: checkout
       run: |
-        git clone -b development ${{ secrets.GITAPPKEY }}
+        git clone -b pbclean ${{ secrets.GITAPPKEY }}
 
     - uses: FranzDiebold/github-env-vars-action@v2
     - name: Create Build Environment
